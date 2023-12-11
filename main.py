@@ -1,13 +1,11 @@
 import gym_super_mario_bros as bros
 import os
-import torch.cuda
 from nes_py.wrappers import JoypadSpace
 from gym_super_mario_bros.actions import SIMPLE_MOVEMENT
 from gym.wrappers import GrayScaleObservation as GSO
 from stable_baselines3 import PPO
 from stable_baselines3.common.callbacks import BaseCallback
 from stable_baselines3.common.vec_env import VecFrameStack, DummyVecEnv
-from matplotlib import pyplot as plt
 
 checkpoint_dir = "./train/"
 logs_dir = "./logs/"
